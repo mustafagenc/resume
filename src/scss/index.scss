@@ -1,0 +1,206 @@
+h1 {
+    display: none;
+}
+
+.container {
+    position: relative;
+    flex-direction: column;
+    @include mq("desktop") {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+}
+
+a.madeby {
+    position: absolute;
+    bottom: -$gutter - 20px;
+    right: $gutter;
+    font-size: 12px;
+    font-weight: 700;
+    & svg {
+        width: 13px;
+        height: 13px;
+        margin-bottom: -2px;
+        stroke: $color-ekipisi;
+        fill: $color-ekipisi;
+    }
+}
+
+.sidebar {
+    background-color: $color-white;
+    margin-top: $top-space-mobile;
+    @include mq("desktop") {
+        flex: 0 0 auto;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 0 1px 0;
+        margin-top: $top-space-desktop;
+    }
+    & .image {
+        position: relative;
+    }
+    & .image img {
+        width: 100%;
+        @include mq("desktop") {
+            width: 270px;
+        }
+    }
+    & .menu li {
+        position: relative;
+        font-size: 16px;
+        font-weight: 600;
+        border-bottom: 1px solid #F7F7F7;
+        & a {
+            display: flex;
+            padding: 12px;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            & .icon {
+                flex: 0 0 auto;
+                color: $color-soft-black;
+            }
+            & span {
+                display: block;
+                text-align: right;
+                flex: 1 1 auto;
+            }
+            &:hover {
+                background-color: $color-soft-black;
+                color: #FFF;
+                & .icon {
+                    color: #FFF;
+                }
+            }
+        }
+    }
+    & .social {
+        display: flex;
+        padding: $gutter;
+        align-items: center;
+        justify-content: space-around;
+        & .icon {
+            color: $color-light-slate-grey;
+            width: 24px;
+            height: 24px;
+            &:hover {
+                color: $color-light-slate-grey-hover;
+            }
+            &.icon-lab {
+                stroke: $color-ekipisi;
+                fill: $color-ekipisi;
+            }
+        }
+    }
+}
+
+.content {
+    background-color: $color-white;
+    margin-top: $top-space-mobile;
+    @include mq("desktop") {
+        flex: 1 1 auto;
+        margin-left: $gutter;
+        margin-top: $top-space-desktop;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 0 1px 0;
+    }
+    & .box:hover h2 {
+        &::after {
+            width: 111%;
+            border-bottom: 2px solid $color-blue;
+        }
+        & svg {
+            stroke: $color-blue;
+            fill: $color-blue;
+            -webkit-animation: linear 1 alternate;
+            -webkit-animation-name: pacman;
+            -webkit-animation-duration: 8s;
+        }
+    }
+    & .title {
+        margin-top: 0px;
+        padding: $gutter $content-padding;
+        & h2 {
+            position: relative;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            &::after {
+                display: block;
+                content: "";
+                border-bottom: 2px solid $color-iron;
+                width: 50%;
+                margin-top: 20px;
+                margin-left: -$content-padding;
+                -webkit-transition: all .6s ease-in-out;
+                -moz-transition: all .6s ease-in-out;
+                -o-transition: all .6s ease-in-out;
+                transition: all .6s ease-in-out;
+                @include mq("desktop") {
+                    width: 30%;
+                }
+            }
+            & svg {
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                left: 33%;
+                top: 33px;
+                stroke: $color-iron;
+                fill: $color-iron;
+                -webkit-transition: all .6s ease-in-out;
+                -moz-transition: all .6s ease-in-out;
+                -o-transition: all .6s ease-in-out;
+                transition: all .6s ease-in-out;
+                @include mq("desktop") {
+                    left: 23%;
+                }
+            }
+        }
+    }
+    & .sub-title {
+        padding: 0 $content-padding $gutter;
+        & h3 {
+            color: #37474f;
+            font-size: 21px;
+            margin-bottom: 10px;
+            & small {
+                display: block;
+                font-weight: 400;
+                margin-top: 5px;
+            }
+        }
+    }
+    & .description {
+        padding: 0 $content-padding 50px $content-padding;
+        width: 100%;
+        & p {
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 30px;
+            @include mq("tablet") {
+                width: 49%;
+                margin-bottom: 0;
+            }
+            &:first-child {
+                padding-right: 20px;
+            }
+        }
+        & .author {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            & li {
+                list-style: none;
+                display: inline-block;
+                width: 100%;
+                text-align: left;
+                line-height: 1.9;
+                @include mq("tablet") {
+                    width: calc(100% / 2);
+                }
+            }
+        }
+    }
+}
