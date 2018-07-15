@@ -1,0 +1,1 @@
+$(function(){$(".external").click(function(n){n.preventDefault(),window.open(this.href)})});
