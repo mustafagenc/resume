@@ -44,11 +44,10 @@
             }
             & .item-detail {
                 color: rgba(0, 0, 0, 0.5);
-                font-size: 12px;
             }
             & .timestamp {
                 color: #8D8D8D;
-                font-size: 12px;
+                font-size: 14px;
                 @include mq("desktop") {
                     position: absolute;
                     text-align: right;

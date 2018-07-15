@@ -6,8 +6,13 @@ html
     title Mustafa GEN&Ccedil;
     link(href='https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&amp;subset=latin-ext' rel='stylesheet')
     link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css')
-    link(rel='stylesheet' href='main.css')
-
+    link(rel='stylesheet' href='/app.css')
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-111481679-5')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-111481679-5');
   body
     include icons
 
@@ -15,4 +20,6 @@ html
 
     script(src='https://code.jquery.com/jquery-3.3.1.min.js')
     script(src='https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js')
-    script(src='main.js')
+    script(src='/src/js/plugins/flickity.pkgd.js')
+    script(src='/src/js/plugins/jquery.sticky-sidebar.js')
+    script(src='/app.js')

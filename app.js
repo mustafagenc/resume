@@ -1,0 +1,1 @@
+$(function(){$(".external").click(function(e){e.preventDefault(),window.open(this.href)}),768<=$(window).width()&&$(".sidebar-wrapper").stickySidebar({topSpacing:80,bottomSpacing:60})});var scroll=new SmoothScroll('a[href*="#"]',{easing:"easeInQuad",topOnEmptyHash:!0});
