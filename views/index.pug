@@ -4,48 +4,9 @@ block content
 
   h1 Mustafa GEN&Ccedil;
   .container
-    aside.sidebar
-      .image
-        img(src='./images/mustafa-genc.jpg' alt='Mustafa Genç' title='Mustafa Genç')
-        a.github-fork-ribbon.left-top(href='https://github.com/mustafagenc/resume' data-ribbon='Fork me on GitHub' title='Fork me on GitHub')
-          | Fork me on GitHub
-      ul.menu
-        li
-          a(href='')
-            svg.icon.icon-profile
-              use(xlink:href='#icon-profile')
-            span Hakk&imath;mda
-        li
-          a(href='')
-            svg.icon.icon-pen
-              use(xlink:href='#icon-pen')
-            span Yetenekler
-        li
-          a(href='')
-            svg.icon.icon-mug
-              use(xlink:href='#icon-mug')
-            span Deneyimler
-        li
-          a(href='')
-            svg.icon.icon-briefcase
-              use(xlink:href='#icon-briefcase')
-            span Projeler
-      .social
-        a.external(href='https://www.ekipisi.com.tr/')
-          svg.icon.icon-lab
-            use(xlink:href='#icon-lab')
-        a.external(href='https://github.com/mustafagenc/')
-          svg.icon.icon-github
-            use(xlink:href='#icon-github')
-        a.external(href='https://instagram.com/mustafagenc/')
-          svg.icon.icon-instagram
-            use(xlink:href='#icon-instagram')
-        a.external(href='https://twitter.com/mustafagenc/')
-          svg.icon.icon-twitter
-            use(xlink:href='#icon-twitter')
-        a.external(href='https://facebook.com/mustafagencx/')
-          svg.icon.icon-facebook2
-            use(xlink:href='#icon-facebook2')
+    
+    include global/sidebar  
+
     section.content
       #hakkimda.box
         .title
@@ -58,6 +19,76 @@ block content
             | Mustafa Gen&ccedil;
             small Software Developer
         .description
+          p
+            | Lorem Ipsum, dizgi ve bask&imath; end&uuml;strisinde kullan&imath;lan m&imath;g&imath;r metinlerdir. Lorem Ipsum, ad&imath; bilinmeyen bir matbaac&imath;n&imath;n bir hurufat
+            | numune kitab&imath; olu&scedil;turmak &uuml;zere bir yaz&imath; galerisini alarak kar&imath;&scedil;t&imath;rd&imath;&gbreve;&imath; 1500&apos;lerden beri end&uuml;stri
+            | standard&imath; sahte metinler olarak kullan&imath;lm&imath;&scedil;t&imath;r. Be&scedil;y&uuml;z y&imath;l boyunca varl&imath;&gbreve;&imath;n&imath; s&uuml;rd&uuml;rmekle kalmam&imath;&scedil;,
+            | ayn&imath; zamanda pek de&gbreve;i&scedil;meden elektronik dizgiye de s&imath;&ccedil;ram&imath;&scedil;t&imath;r. 1960&apos;larda Lorem Ipsum pasajlar&imath; da
+            | i&ccedil;eren Letraset yapraklar&imath;n&imath;n yay&imath;nlanmas&imath; ile ve yak&imath;n zamanda Aldus PageMaker gibi Lorem Ipsum
+            | s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&imath;nc&imath;l&imath;k yaz&imath;l&imath;mlar&imath; ile pop&uuml;ler olmu&scedil;tur.
+          p
+            | Yayg&imath;n inanc&imath;n tersine, Lorem Ipsum rastgele s&ouml;zc&uuml;klerden olu&scedil;maz. K&ouml;kleri M.&Ouml;. 45 tarihinden bu yana klasik Latin edebiyat&imath;na
+            | kadar uzanan 2000 y&imath;ll&imath;k bir ge&ccedil;mi&scedil;i vard&imath;r. Virginia&apos;daki Hampden-Sydney College&apos;dan Latince profes&ouml;r&uuml;
+            | Richard McClintock, bir Lorem Ipsum pasaj&imath;nda ge&ccedil;en ve anla&scedil;&imath;lmas&imath; en g&uuml;&ccedil; s&ouml;zc&uuml;klerden biri olan
+            | &apos;consectetur&apos; s&ouml;zc&uuml;&gbreve;&uuml;n&uuml;n klasik edebiyattaki &ouml;rneklerini inceledi&gbreve;inde kesin bir kayna&gbreve;a ula&scedil;m&imath;&scedil;t&imath;r.
+            | Lorm Ipsum, &Ccedil;i&ccedil;ero taraf&imath;ndan M.&Ouml;. 45 tarihinde kaleme al&imath;nan &quot;de Finibus Bonorum et Malorum&quot; (&Idot;yi
+            | ve K&ouml;t&uuml;n&uuml;n U&ccedil; S&imath;n&imath;rlar&imath;) eserinin 1.10.32.
+          p
+            | Lorem Ipsum, dizgi ve bask&imath; end&uuml;strisinde kullan&imath;lan m&imath;g&imath;r metinlerdir. Lorem Ipsum, ad&imath; bilinmeyen bir matbaac&imath;n&imath;n bir hurufat
+            | numune kitab&imath; olu&scedil;turmak &uuml;zere bir yaz&imath; galerisini alarak kar&imath;&scedil;t&imath;rd&imath;&gbreve;&imath; 1500&apos;lerden beri end&uuml;stri
+            | standard&imath; sahte metinler olarak kullan&imath;lm&imath;&scedil;t&imath;r. Be&scedil;y&uuml;z y&imath;l boyunca varl&imath;&gbreve;&imath;n&imath; s&uuml;rd&uuml;rmekle kalmam&imath;&scedil;,
+            | ayn&imath; zamanda pek de&gbreve;i&scedil;meden elektronik dizgiye de s&imath;&ccedil;ram&imath;&scedil;t&imath;r. 1960&apos;larda Lorem Ipsum pasajlar&imath; da
+            | i&ccedil;eren Letraset yapraklar&imath;n&imath;n yay&imath;nlanmas&imath; ile ve yak&imath;n zamanda Aldus PageMaker gibi Lorem Ipsum
+            | s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&imath;nc&imath;l&imath;k yaz&imath;l&imath;mlar&imath; ile pop&uuml;ler olmu&scedil;tur.
+          p
+            | Yayg&imath;n inanc&imath;n tersine, Lorem Ipsum rastgele s&ouml;zc&uuml;klerden olu&scedil;maz. K&ouml;kleri M.&Ouml;. 45 tarihinden bu yana klasik Latin edebiyat&imath;na
+            | kadar uzanan 2000 y&imath;ll&imath;k bir ge&ccedil;mi&scedil;i vard&imath;r. Virginia&apos;daki Hampden-Sydney College&apos;dan Latince profes&ouml;r&uuml;
+            | Richard McClintock, bir Lorem Ipsum pasaj&imath;nda ge&ccedil;en ve anla&scedil;&imath;lmas&imath; en g&uuml;&ccedil; s&ouml;zc&uuml;klerden biri olan
+            | &apos;consectetur&apos; s&ouml;zc&uuml;&gbreve;&uuml;n&uuml;n klasik edebiyattaki &ouml;rneklerini inceledi&gbreve;inde kesin bir kayna&gbreve;a ula&scedil;m&imath;&scedil;t&imath;r.
+            | Lorm Ipsum, &Ccedil;i&ccedil;ero taraf&imath;ndan M.&Ouml;. 45 tarihinde kaleme al&imath;nan &quot;de Finibus Bonorum et Malorum&quot; (&Idot;yi
+            | ve K&ouml;t&uuml;n&uuml;n U&ccedil; S&imath;n&imath;rlar&imath;) eserinin 1.10.32.
+          p
+            | Lorem Ipsum, dizgi ve bask&imath; end&uuml;strisinde kullan&imath;lan m&imath;g&imath;r metinlerdir. Lorem Ipsum, ad&imath; bilinmeyen bir matbaac&imath;n&imath;n bir hurufat
+            | numune kitab&imath; olu&scedil;turmak &uuml;zere bir yaz&imath; galerisini alarak kar&imath;&scedil;t&imath;rd&imath;&gbreve;&imath; 1500&apos;lerden beri end&uuml;stri
+            | standard&imath; sahte metinler olarak kullan&imath;lm&imath;&scedil;t&imath;r. Be&scedil;y&uuml;z y&imath;l boyunca varl&imath;&gbreve;&imath;n&imath; s&uuml;rd&uuml;rmekle kalmam&imath;&scedil;,
+            | ayn&imath; zamanda pek de&gbreve;i&scedil;meden elektronik dizgiye de s&imath;&ccedil;ram&imath;&scedil;t&imath;r. 1960&apos;larda Lorem Ipsum pasajlar&imath; da
+            | i&ccedil;eren Letraset yapraklar&imath;n&imath;n yay&imath;nlanmas&imath; ile ve yak&imath;n zamanda Aldus PageMaker gibi Lorem Ipsum
+            | s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&imath;nc&imath;l&imath;k yaz&imath;l&imath;mlar&imath; ile pop&uuml;ler olmu&scedil;tur.
+          p
+            | Yayg&imath;n inanc&imath;n tersine, Lorem Ipsum rastgele s&ouml;zc&uuml;klerden olu&scedil;maz. K&ouml;kleri M.&Ouml;. 45 tarihinden bu yana klasik Latin edebiyat&imath;na
+            | kadar uzanan 2000 y&imath;ll&imath;k bir ge&ccedil;mi&scedil;i vard&imath;r. Virginia&apos;daki Hampden-Sydney College&apos;dan Latince profes&ouml;r&uuml;
+            | Richard McClintock, bir Lorem Ipsum pasaj&imath;nda ge&ccedil;en ve anla&scedil;&imath;lmas&imath; en g&uuml;&ccedil; s&ouml;zc&uuml;klerden biri olan
+            | &apos;consectetur&apos; s&ouml;zc&uuml;&gbreve;&uuml;n&uuml;n klasik edebiyattaki &ouml;rneklerini inceledi&gbreve;inde kesin bir kayna&gbreve;a ula&scedil;m&imath;&scedil;t&imath;r.
+            | Lorm Ipsum, &Ccedil;i&ccedil;ero taraf&imath;ndan M.&Ouml;. 45 tarihinde kaleme al&imath;nan &quot;de Finibus Bonorum et Malorum&quot; (&Idot;yi
+            | ve K&ouml;t&uuml;n&uuml;n U&ccedil; S&imath;n&imath;rlar&imath;) eserinin 1.10.32.
+          p
+            | Lorem Ipsum, dizgi ve bask&imath; end&uuml;strisinde kullan&imath;lan m&imath;g&imath;r metinlerdir. Lorem Ipsum, ad&imath; bilinmeyen bir matbaac&imath;n&imath;n bir hurufat
+            | numune kitab&imath; olu&scedil;turmak &uuml;zere bir yaz&imath; galerisini alarak kar&imath;&scedil;t&imath;rd&imath;&gbreve;&imath; 1500&apos;lerden beri end&uuml;stri
+            | standard&imath; sahte metinler olarak kullan&imath;lm&imath;&scedil;t&imath;r. Be&scedil;y&uuml;z y&imath;l boyunca varl&imath;&gbreve;&imath;n&imath; s&uuml;rd&uuml;rmekle kalmam&imath;&scedil;,
+            | ayn&imath; zamanda pek de&gbreve;i&scedil;meden elektronik dizgiye de s&imath;&ccedil;ram&imath;&scedil;t&imath;r. 1960&apos;larda Lorem Ipsum pasajlar&imath; da
+            | i&ccedil;eren Letraset yapraklar&imath;n&imath;n yay&imath;nlanmas&imath; ile ve yak&imath;n zamanda Aldus PageMaker gibi Lorem Ipsum
+            | s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&imath;nc&imath;l&imath;k yaz&imath;l&imath;mlar&imath; ile pop&uuml;ler olmu&scedil;tur.
+          p
+            | Yayg&imath;n inanc&imath;n tersine, Lorem Ipsum rastgele s&ouml;zc&uuml;klerden olu&scedil;maz. K&ouml;kleri M.&Ouml;. 45 tarihinden bu yana klasik Latin edebiyat&imath;na
+            | kadar uzanan 2000 y&imath;ll&imath;k bir ge&ccedil;mi&scedil;i vard&imath;r. Virginia&apos;daki Hampden-Sydney College&apos;dan Latince profes&ouml;r&uuml;
+            | Richard McClintock, bir Lorem Ipsum pasaj&imath;nda ge&ccedil;en ve anla&scedil;&imath;lmas&imath; en g&uuml;&ccedil; s&ouml;zc&uuml;klerden biri olan
+            | &apos;consectetur&apos; s&ouml;zc&uuml;&gbreve;&uuml;n&uuml;n klasik edebiyattaki &ouml;rneklerini inceledi&gbreve;inde kesin bir kayna&gbreve;a ula&scedil;m&imath;&scedil;t&imath;r.
+            | Lorm Ipsum, &Ccedil;i&ccedil;ero taraf&imath;ndan M.&Ouml;. 45 tarihinde kaleme al&imath;nan &quot;de Finibus Bonorum et Malorum&quot; (&Idot;yi
+            | ve K&ouml;t&uuml;n&uuml;n U&ccedil; S&imath;n&imath;rlar&imath;) eserinin 1.10.32.
+          p
+            | Lorem Ipsum, dizgi ve bask&imath; end&uuml;strisinde kullan&imath;lan m&imath;g&imath;r metinlerdir. Lorem Ipsum, ad&imath; bilinmeyen bir matbaac&imath;n&imath;n bir hurufat
+            | numune kitab&imath; olu&scedil;turmak &uuml;zere bir yaz&imath; galerisini alarak kar&imath;&scedil;t&imath;rd&imath;&gbreve;&imath; 1500&apos;lerden beri end&uuml;stri
+            | standard&imath; sahte metinler olarak kullan&imath;lm&imath;&scedil;t&imath;r. Be&scedil;y&uuml;z y&imath;l boyunca varl&imath;&gbreve;&imath;n&imath; s&uuml;rd&uuml;rmekle kalmam&imath;&scedil;,
+            | ayn&imath; zamanda pek de&gbreve;i&scedil;meden elektronik dizgiye de s&imath;&ccedil;ram&imath;&scedil;t&imath;r. 1960&apos;larda Lorem Ipsum pasajlar&imath; da
+            | i&ccedil;eren Letraset yapraklar&imath;n&imath;n yay&imath;nlanmas&imath; ile ve yak&imath;n zamanda Aldus PageMaker gibi Lorem Ipsum
+            | s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&imath;nc&imath;l&imath;k yaz&imath;l&imath;mlar&imath; ile pop&uuml;ler olmu&scedil;tur.
+          p
+            | Yayg&imath;n inanc&imath;n tersine, Lorem Ipsum rastgele s&ouml;zc&uuml;klerden olu&scedil;maz. K&ouml;kleri M.&Ouml;. 45 tarihinden bu yana klasik Latin edebiyat&imath;na
+            | kadar uzanan 2000 y&imath;ll&imath;k bir ge&ccedil;mi&scedil;i vard&imath;r. Virginia&apos;daki Hampden-Sydney College&apos;dan Latince profes&ouml;r&uuml;
+            | Richard McClintock, bir Lorem Ipsum pasaj&imath;nda ge&ccedil;en ve anla&scedil;&imath;lmas&imath; en g&uuml;&ccedil; s&ouml;zc&uuml;klerden biri olan
+            | &apos;consectetur&apos; s&ouml;zc&uuml;&gbreve;&uuml;n&uuml;n klasik edebiyattaki &ouml;rneklerini inceledi&gbreve;inde kesin bir kayna&gbreve;a ula&scedil;m&imath;&scedil;t&imath;r.
+            | Lorm Ipsum, &Ccedil;i&ccedil;ero taraf&imath;ndan M.&Ouml;. 45 tarihinde kaleme al&imath;nan &quot;de Finibus Bonorum et Malorum&quot; (&Idot;yi
+            | ve K&ouml;t&uuml;n&uuml;n U&ccedil; S&imath;n&imath;rlar&imath;) eserinin 1.10.32.
           p
             | Lorem Ipsum, dizgi ve bask&imath; end&uuml;strisinde kullan&imath;lan m&imath;g&imath;r metinlerdir. Lorem Ipsum, ad&imath; bilinmeyen bir matbaac&imath;n&imath;n bir hurufat
             | numune kitab&imath; olu&scedil;turmak &uuml;zere bir yaz&imath; galerisini alarak kar&imath;&scedil;t&imath;rd&imath;&gbreve;&imath; 1500&apos;lerden beri end&uuml;stri

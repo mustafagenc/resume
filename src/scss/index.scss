@@ -30,6 +30,7 @@ a.madeby {
 .sidebar {
     background-color: $color-white;
     margin-top: $top-space-mobile;
+
     @include mq("desktop") {
         flex: 0 0 auto;
         box-shadow: rgba(0, 0, 0, 0.2) 0 0 1px 0;
