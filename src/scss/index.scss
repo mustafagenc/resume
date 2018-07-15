@@ -48,7 +48,7 @@ a.madeby {
     & .menu li {
         position: relative;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 700;
         border-bottom: 1px solid #F7F7F7;
         & a {
             display: flex;
@@ -123,7 +123,7 @@ a.madeby {
         & h2 {
             position: relative;
             font-size: 17px;
-            font-weight: 700;
+            font-weight: 900;
             margin-bottom: 20px;
             &::after {
                 display: block;
@@ -205,3 +205,48 @@ a.madeby {
         }
     }
 }
+
+.skin {
+    display: flex;
+    flex-direction: column;
+    & li {
+        font-size: 14px;
+        margin-bottom: 5px;
+        position: relative;
+        display: flex;
+        height: 30px;
+        background-color: #F0F0F0;
+        border-radius: $border-radius;
+
+        & p{
+            position: absolute;
+            top:5px;
+            left: 10px;
+            color: #FFF;
+            font-weight: 700;
+        }
+        & span {
+            width: 100%;
+            height: 100%;
+            border-radius: $border-radius;
+            &.vivid {
+                background-color: #994C94;
+            }
+            &.blue {
+                background-color: #137BB8;
+            }
+            &.rosso {
+                background-color: #DB1805;
+            }
+            &.cove {
+                background-color: #777BB3;
+            }
+        }
+    }
+}
+
+.deneysel {
+    margin-top: 10px;
+    font-size: 13px;
+}
+

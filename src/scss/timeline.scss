@@ -1,0 +1,61 @@
+.history {
+    margin: auto;
+    display: block;
+    position: relative;
+    width: 100%;
+    @include mq("desktop") {
+        width: 96%;
+    }
+    & ul.tl {
+        margin: 20px 0 0 0;
+        padding: 0;
+        display: inline-block;
+        & li {
+            list-style: none;
+            min-height: 30px;
+            border-left: 1px dashed #8BC349;
+            position: relative;
+            padding: 0 0 50px 30px;
+            @include mq("desktop") {
+                margin-left: 200px;
+            }
+            &:last-child {
+                border-left: 0;
+            }
+            &::before {
+                position: absolute;
+                left: -11px;
+                top: 0;
+                content: " ";
+                border: 8px solid rgba(255, 255, 255, 0.74);
+                border-radius: 500%;
+                background: #8BC349;
+                height: 20px;
+                width: 20px;
+                transition: all 500ms ease-in-out;
+            }
+            &:hover::before {
+                border-color: #8BC349;
+                transition: all 1000ms ease-in-out;
+            }
+            & .item-title {
+                padding: 0;
+                margin: 0;
+            }
+            & .item-detail {
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 12px;
+            }
+            & .timestamp {
+                color: #8D8D8D;
+                font-size: 12px;
+                @include mq("desktop") {
+                    position: absolute;
+                    text-align: right;
+                    width: 200px;
+                    left: -50%;
+                }
+            }
+        }
+    }
+}
